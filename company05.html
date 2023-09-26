@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="theme-color" content="#ff5200">
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content=""/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content=""/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content=""/> 
+        <meta property="og:image" content=""/>-->
+        <title>TMG</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/company.css"/>
+        <script src="js/global.js"></script>
+    </head>
+    <body>
+        <!-- ** [S] Header ** -->
+        <header class="header">
+            <div class="layout flex h-spread v-start">
+                <div class="header-left">
+                    <h1 class="logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="Veteran CXO" />
+                        </a>
+                    </h1>
+    
+                    <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
+                    <p class="hd-left__txt arial">Korea’s First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
+                </div>
+
+                <div class="header-right m-hidden">
+                    <a href="login.html" class="hd-right__link">
+                        개인회원 로그인
+                        <span class="arial">
+                            Individual Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <a href="login.html" class="hd-right__link active">
+                        기업회원 로그인
+                        <span class="arial">
+                            Corporate Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <div class="hd-signup__wrap">
+                        <a href="javascript:void(0);" class="hd-signup__link">
+                            회원가입
+                            <span class="arial">Subscribe</span>
+                        </a>
+
+                        <ul class="hd-signup__list">
+                            <li>
+                                <a href="signup-1.html">개인회원 가입</a>
+                            </li>
+                            <li>
+                                <a href="signup-1.html">기업회원 가입</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="m-menu-btn" title="메뉴"></button>
+            </div>
+        </header>
+        <!-- ** [E] Header ** -->
+
+        <!-- ** [S] Mobile Side Menu ** -->
+        <aside class="side-menu__wrap m-only">
+            <div class="side-menu__hd">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="./images/logo.png" alt="Veteran CXO" />
+                    </a>
+                </h1>
+
+                <!-- 사이드 메뉴 닫기 버튼 -->
+                <button type="button" class="m-menu-close" title="닫기"></button>
+
+                <!-- Depth 1으로 이동 버튼 -->
+                <button type="button" class="m-menu-close back" title="뒤로" hidden onclick="goMainMenu();"></button>
+            </div>
+
+            <div class="side-menu__content">
+                <!-- Depth 1 -->
+                <ul class="side-menu__nav depth-1">
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">신규 채용포지션 등록</a>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">채용 현황 조회</a>
+                    </li>
+                    <li>
+                        <a href="#">임원검색</a>
+                    </li>
+                    <li>
+                        <a href="#">관심 프로필조회</a>
+                    </li>
+                    <li>
+                        <a href="#">이용권 구매</a>
+                    </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                    </li>
+                    <li>
+                        <a href="#">My Page</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+
+                <!-- Dpeth 2 -->
+                <ul class="side-menu__nav depth-2" hidden>
+                    <li>
+                        <a href="#">신규 JD 등록</a>
+                    </li>
+                    <li>
+                        <a href="#">기존 JD 편집</a>
+                    </li>
+                </ul>
+
+                <!-- Side Menu Footer -->
+                <footer class="footer">
+                    <div class="layout">
+                        <nav class="main-nav">
+                            <a href="intro.html" class="m-order-1">
+                                <p>회사소개</p>
+                                <span class="arial">About Us</span>
+                            </a>
+                            <a href="ceo.html" class="m-order-3">
+                                <p>CEO 소개</p>
+                                <span class="arial">Our Leadership</span>
+                            </a>
+                            <a href="service.html" class="m-order-5">
+                                <p>서비스 이용안내</p>
+                                <span class="arial">How it Works</span>
+                            </a>
+                            <a href="terms.html" class="m-order-2">
+                                <p>이용약관</p>
+                                <span class="arial">Terms of Use</span>
+                            </a>
+                            <a href="privacy-policy.html" class="m-order-4">
+                                <p>개인정보 처리방침</p>
+                                <span class="arial">Privacy Policy</span>
+                            </a>
+                            <a href="inquiry.html" class="m-order-6">
+                                <p>문의하기</p>
+                                <span class="arial">Inquiry</span>
+                            </a>
+                        </nav>
+        
+                        <div class="corp-info__wrap">
+                            <div class="corp-info">
+                                <p>상호: 티엠지 인터내셔널(유)</p>
+                                <p>대표자: 김승종</p>
+                                <p>07345 서울시 영등포구 63로 40</p>
+                                <p class="arial">email: info@veterancxo.com</p>
+                            </div>
+                            <div class="corp-info">
+                                <p>사업자등록번호: 377-87-00274</p>
+                                <p>통신판매업 신고번호: 377-87-00274</p>
+                                <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                            </div>
+                        </div>
+        
+                        <p class="copyright arial">Copyright 2023 TMG International. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </aside>
+        <!-- ** [E] Mobile Side Menu ** -->
+
+        <!-- ** [S] 채용기회(포지션) 제안 : 개인  -->
+        <div class="page-content company05">
+            <img src="./images/intro-banner.png" class="top-banner" alt=""/>
+            <div class="full-layout flex h-end">
+                <section class="page-nav__wrap flex m-hidden">
+                    <ul class="page-nav__list">
+                        <li>
+                            <a href="javascript:void(0);" class="page-nav__link">신규 채용포지션<br />등록</a>
+                            <ul class="page-nav__sub">
+                                <li>
+                                    <a href="#">신규 JD 등록</a>
+                                </li>
+                                <li>
+                                    <a href="#">기존 JD 편집</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="page-nav__link">채용 현황<br />조회</a>
+                            <ul class="page-nav__sub">
+                                <li>
+                                    <a href="#">간접 소싱(채용공고) 현황 조회</a>
+                                </li>
+                                <li>
+                                    <a href="#">직접 소싱(임원검색) 현황 조회/편집</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-nav__link">임원 검색</a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-nav__link">관심 프로필<br />조회</a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-nav__link">이용권 구매</a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-nav__link">Q&A</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="page-nav__link">My Page</a>
+                            <ul class="page-nav__sub">
+                                <li>
+                                    <a href="#">계정정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">구매내역</a>
+                                </li>
+                                <li>
+                                    <a href="#">데이터</a>
+                                </li>
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-nav__link">공지사항<p class="alarm"><span>2</span></p></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="full-layout flex h-start">
+                <section class="famous-saying m-hidden">
+                    <b>DID YOU KNOW THIS?</b>
+                    현직 임원들은 25%만 외부 이직 기회에 적극적이고 나머지 75%는 현직에 만족하거나 너무 바빠서 이직 기회에 소극적입니다.  따라서 ‘간접 소싱‘ 방법인 <i>채용공고</i>만으로는 한계가 명확합니다. 기업이 원하는 인재가 채용공고에 지원하지 
+                    않을 개연성이 상대적으로 높기 때문입니다.  그래서 Veteran CXO는 채용공고와 같은 ‘간접 소싱’은 ‘직접 소싱’의 보완적/보조적 수단으로만 의미가 있다고 생각합니다.  2가지 방법을 모두 병행한다면 더 나은 결과가 나올 수 있겠지만 
+                    <span>핵심은 기업이 원하는 인재를 직접 <i>능동적으로 검색해서 컨택하는 ‘직접 소싱’ 방식이 훨씬 더 효과적</i>이라는 점입니다.</span>
+                </section>
+            </div>
+            
+            <section class="layout">
+                <strong>채용 프로세스 순서도<span>(이 프로세스에 따라 Veteran CXO의 기업회원 서비스 메뉴를 활용하면 됨)</span></strong>
+                <div class="flow-wrap">
+                    <div class="flow-item flow01">
+                        <div>
+                            <em>1</em>
+                            <p>채용할 포지션의 <u>직무기술서</u> <br />(Job Description) 등록</p>
+                        </div>
+                        <span class="attach">and / or</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>2</em>
+                                    “직접 소싱” 방법 선택* <br />(→ 1:1 채용기회 제안)
+                                </div>
+                                <p>* Proactive Sourcing 방법으로 임원검색을 통해 직무요건에 가장 부합하는 인재를 발굴해서 직접 채용기회를 제안하고 설명해서 지원율을 높이는 방법임</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>3</em>
+                                    임원 검색 후 관심 있는 <br />인재에게 “능동적으로” <br />채용기회 제안 <br />(Proactive Sourcing)
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>4</em>
+                                    채용기회 제안에 관심 표명한 <br />개별 지원자들과 직접 채용 <br />프로세스 진행<br />(이력서 요청 및 인터뷰 진행)
+                                </div>
+                                <p>* 채용기회를 제안 받은 후보자들 중 관심을 표명한 후보자들은 실명과 개인 연락처를 60일간 공개할 것임. 이 연락처로 직접 컨택을 해서 이력서 요청 및 인터뷰 진행 프로세스를 밟으면 됨</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>2</em>
+                                    “간접 소싱” 방법 선택* <br />(→ 1:N 채용공고 등록)
+                                </div>
+                                <p>* Reactive Sourcing 방법으로 채용공고를 등록해서 이에 지원하는 인력 pool 한도내에서 채용 프로세스를 진행하는 수동적인 방법임. 채용공고에 지원하는 현직 임원들의 비율이 통상 25% 미만이라는 점임</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>3</em>
+                                    채용공고에 관심 표명한 <br />지원자 확인 <br />(Reactive Sourcing)
+                                </div>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flow-item">
+                                <div>
+                                    <em>4</em>
+                                    채용공고 지원자 중 선별하여 <br />직접 채용 프로세스 진행 <br />(이력서 요청 및 인터뷰 진행)
+                                </div>
+                                <p>* 채용 공고에 지원한 후보자들은 실명과 개인 연락처가 일정 기간(채용공고 유효기간 30일)동안 공개될 것임. 이 연락처로 직접 컨택을 해서 이력서 요청 및 인터뷰 진행 프로세스를 밟으면 됨</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="explain">기업의 상황과 니즈에 맞는 이용권 상품을 선택하여 원하는 채용 방법과 프로세스를 밟으면 됨</div>
+                </div>
+            </section>
+        </div>
+        <!-- ** [E] 채용기회(포지션) 제안 : 개인  -->
+
+        <!-- ** [S] Footer ** -->
+        <footer class="footer">
+            <div class="layout">
+                <nav class="main-nav">
+                    <a href="intro.html" class="m-order-1">
+                        <p>회사소개</p>
+                        <span class="arial">About Us</span>
+                    </a>
+                    <a href="ceo.html" class="m-order-3">
+                        <p>CEO 소개</p>
+                        <span class="arial">Our Leadership</span>
+                    </a>
+                    <a href="service.html" class="m-order-5">
+                        <p>서비스 이용안내</p>
+                        <span class="arial">How it Works</span>
+                    </a>
+                    <a href="terms.html" class="m-order-2">
+                        <p>이용약관</p>
+                        <span class="arial">Terms of Use</span>
+                    </a>
+                    <a href="privacy-policy.html" class="m-order-4">
+                        <p>개인정보 처리방침</p>
+                        <span class="arial">Privacy Policy</span>
+                    </a>
+                    <a href="inquiry.html" class="m-order-6">
+                        <p>문의하기</p>
+                        <span class="arial">Inquiry</span>
+                    </a>
+                </nav>
+
+                <div class="corp-info__wrap m-hidden">
+                    <div class="corp-info">
+                        <p>상호: 티엠지 인터내셔널(유)</p>
+                        <p>대표자: 김승종</p>
+                        <p>07345 서울시 영등포구 63로 40</p>
+                        <p class="arial">email: info@veterancxo.com</p>
+                    </div>
+                    <div class="corp-info">
+                        <p>사업자등록번호: 377-87-00274</p>
+                        <p>통신판매업 신고번호: 377-87-00274</p>
+                        <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                    </div>
+                </div>
+
+                <p class="copyright arial m-hidden">Copyright 2023 TMG International. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- ** [E] Footer ** -->
+
+        <script>
+        </script>
+    </body>
+</html>

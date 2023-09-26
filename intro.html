@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="theme-color" content="#ff5200">
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content=""/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content=""/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content=""/> 
+        <meta property="og:image" content=""/>-->
+        <title>TMG</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/global.js"></script>
+    </head>
+    <body>
+        <!-- ** [S] Header ** -->
+        <header class="header">
+            <div class="layout flex h-spread v-start">
+                <div class="header-left">
+                    <h1 class="logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="Veteran CXO" />
+                        </a>
+                    </h1>
+    
+                    <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
+                    <p class="hd-left__txt arial">Korea’s First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
+                </div>
+
+                <div class="header-right m-hidden">
+                    <a href="login.html" class="hd-right__link">
+                        개인회원 로그인
+                        <span class="arial">
+                            Individual Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <a href="login.html" class="hd-right__link">
+                        기업회원 로그인
+                        <span class="arial">
+                            Corporate Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <div class="hd-signup__wrap">
+                        <a href="javascript:void(0);" class="hd-signup__link">
+                            회원가입
+                            <span class="arial">Subscribe</span>
+                        </a>
+
+                        <ul class="hd-signup__list">
+                            <li>
+                                <a href="signup-1.html">개인회원 가입</a>
+                            </li>
+                            <li>
+                                <a href="signup-1.html">기업회원 가입</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="m-menu-btn" title="메뉴"></button>
+            </div>
+        </header>
+        <!-- ** [E] Header ** -->
+
+        <!-- ** [S] Mobile Side Menu ** -->
+        <aside class="side-menu__wrap m-only">
+            <div class="side-menu__hd">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="./images/logo.png" alt="Veteran CXO" />
+                    </a>
+                </h1>
+
+                <!-- 사이드 메뉴 닫기 버튼 -->
+                <button type="button" class="m-menu-close" title="닫기"></button>
+
+                <!-- Depth 1으로 이동 버튼 -->
+                <button type="button" class="m-menu-close back" title="뒤로" hidden onclick="goMainMenu();"></button>
+            </div>
+
+            <div class="side-menu__content">
+                <!-- Depth 1 -->
+                <ul class="side-menu__nav depth-1">
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">신규 채용포지션 등록</a>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">채용 현황 조회</a>
+                    </li>
+                    <li>
+                        <a href="#">임원검색</a>
+                    </li>
+                    <li>
+                        <a href="#">관심 프로필조회</a>
+                    </li>
+                    <li>
+                        <a href="#">이용권 구매</a>
+                    </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                    </li>
+                    <li>
+                        <a href="#">My Page</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+
+                <!-- Dpeth 2 -->
+                <ul class="side-menu__nav depth-2" hidden>
+                    <li>
+                        <a href="#">신규 JD 등록</a>
+                    </li>
+                    <li>
+                        <a href="#">기존 JD 편집</a>
+                    </li>
+                </ul>
+
+                <!-- Side Menu Footer -->
+                <footer class="footer">
+                    <div class="layout">
+                        <nav class="main-nav">
+                            <a href="intro.html" class="m-order-1">
+                                <p>회사소개</p>
+                                <span class="arial">About Us</span>
+                            </a>
+                            <a href="ceo.html" class="m-order-3">
+                                <p>CEO 소개</p>
+                                <span class="arial">Our Leadership</span>
+                            </a>
+                            <a href="service.html" class="m-order-5">
+                                <p>서비스 이용안내</p>
+                                <span class="arial">How it Works</span>
+                            </a>
+                            <a href="terms.html" class="m-order-2">
+                                <p>이용약관</p>
+                                <span class="arial">Terms of Use</span>
+                            </a>
+                            <a href="privacy-policy.html" class="m-order-4">
+                                <p>개인정보 처리방침</p>
+                                <span class="arial">Privacy Policy</span>
+                            </a>
+                            <a href="inquiry.html" class="m-order-6">
+                                <p>문의하기</p>
+                                <span class="arial">Inquiry</span>
+                            </a>
+                        </nav>
+        
+                        <div class="corp-info__wrap">
+                            <div class="corp-info">
+                                <p>상호: 티엠지 인터내셔널(유)</p>
+                                <p>대표자: 김승종</p>
+                                <p>07345 서울시 영등포구 63로 40</p>
+                                <p class="arial">email: info@veterancxo.com</p>
+                            </div>
+                            <div class="corp-info">
+                                <p>사업자등록번호: 377-87-00274</p>
+                                <p>통신판매업 신고번호: 377-87-00274</p>
+                                <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                            </div>
+                        </div>
+        
+                        <p class="copyright arial">Copyright 2023 TMG International. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </aside>
+        <!-- ** [E] Mobile Side Menu ** -->
+
+        <!-- ** [S] 회사소개 페이지 컨텐츠  -->
+        <div class="page-content intro-page">
+            <img src="./images/intro-banner.png" class="top-banner" alt=""/>
+
+            <section class="dark-box corp-intro">
+                <div class="layout">
+                    <h3 class="dark-box__title">회사소개</h3>
+                    <div class="dark-box__txt list-style">
+                        <p>
+                            Veteran CXO의 Mission Statement:  “국내 30대 대기업과 <i>Fortune</i> 1000 다국적기업에서 임원급 인재로 20년 이상 근무한 <br/>
+                            각 분야별 전문가들을 필요로 하는 기업회원들간 중간에 어떠한 에이전시도 거치지 않고 온라인상 직접 연결시켜 줌으로써 개인에게는 <br/>
+                            제2의 커리어를, 기업에게는 조속한 역량 확보와 함께 채용 성공 수수료 절감이라는 편익을 제공함에 주된 목적이 있다.”
+                        </p>
+                        <p>개인회원들은 Veteran CXO 플랫폼의 소유 법인인 TMG International의 1만명이 넘는 100% 임원급 인재들의 DB에 기초한다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="intro-rule">
+                <div class="layout">
+                    <h4 class="section-title">Veteran CXO는 다음과 같은 원칙을 고수한다.</h4>
+                    <ul class="rule-list">
+                        <li>
+                            개인 회원들은 국내 30대 대기업(그룹) 및 Fortune 1000 글로벌 외자기업 출신의 한국계 임원을 대상으로 한다.<br/>
+                            100% 임원 직함을 수행했던 개인회원들만 가입 자격이 된다.  만 45세 미만은 가입 자격이 제한된다.
+                        </li>
+                        <li>개인 회원들은 각자 자기 전문 분야에 대한 전문성을 보유하고 있어야 한다.</li>
+                        <li>개인 회원들은 중소/중견 기업 및 기타 외자기업에서 제2의 커리어를 시작하는 데 마음이 열려 있어야 한다.</li>
+                        <li>개인회원의 프로필 정보에 대한 정확성은 본인이 책임을 진다; 부정확한 정보 기입으로 인해 회원 지위 상실 및 재가입이 불허될 수 있다.</li>
+                        <li>
+                            기업회원은 국내 대기업(30~70위권)과 중소/중견기업 그리고 국내에 진출한 혹은 진출 예정인 외자기업들만 가입 자격이 있다.<br/>
+                            아울러 기업회원이 되려면 유효한 사업자등록번호와 회사 홈페이지가 있어야 한다.
+                        </li>
+                        <li>
+                            Veteran CXO의 설립 취지에 벗어나는 기업이나 개인들은 회원가입이 제한된다. 예컨대 고용알선 및 직업소개 업종에 있는 기업이나 개인들은 가입이 제한된다.<br/>
+                            (예: 헤드헌팅 회사, HR 에이전시, 온라인 채용 포탈 등)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="intro-example">
+                <div class="layout">
+                    <h4 class="section-title">개인회원들의 출신 회사/산업/직책 예시</h4>
+
+                    <div class="intro-example__grid">
+                        <div class="example-col">
+                            <div class="example-col__title">Companies</div>
+                            <div class="example-col__grid">
+                                <div class="sub-col">
+                                    <div class="example-col__sub">
+                                        Top Korean<br/>
+                                        <i>Conglomerates</i>
+                                    </div>
+                                    <ul class="example-list">
+                                        <li>삼성</li>
+                                        <li>SK</li>
+                                        <li>현대자동차</li>
+                                        <li>LG</li>
+                                        <li>한화</li>
+                                        <li>GS</li>
+                                        <li>현대중공업</li>
+                                        <li>신세계</li>
+                                        <li>KT</li>
+                                        <li>CJ</li>
+                                        <li>두산</li>
+                                        <li>LS</li>
+                                        <li>DL (former Daelim)</li>
+                                        <li>미래에셋</li>
+                                        <li>네이버</li>
+                                        <li>S-Oil</li>
+                                        <li>효성</li>
+                                        <li>세아</li>
+                                        <li>한국타이어</li>
+                                        <li>아모레퍼시픽</li>
+                                        <li>HL 만도</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-col">
+                                    <div class="example-col__sub">
+                                        Foreign-funded<br/>
+                                        Businesses
+                                    </div>
+                                    <ul class="example-list">
+                                        <li>Apple</li>
+                                        <li>Microsoft</li>
+                                        <li>Alphabet (Google)</li>
+                                        <li>Amazon / AWS</li>
+                                        <li>Johnson &amp; Johnson</li>
+                                        <li>LVMH</li>
+                                        <li>Meta Platforms (Facebook)</li>
+                                        <li>Procter &amp; Gamble</li>
+                                        <li>Nestle</li>
+                                        <li>Merck</li>
+                                        <li>Coca Cola</li>
+                                        <li>Pfizer</li>
+                                        <li>Oracle</li>
+                                        <li>L’Oreal</li>
+                                        <li>Nike</li>
+                                        <li>Cisco</li>
+                                        <li>Accenture</li>
+                                        <li>Caterpillar</li>
+                                        <li>IBM</li>
+                                        <li>Goldman Sachs</li>
+                                        <li>General Electric</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example-col">
+                            <div class="example-col__title">Positions</div>
+                            <ul class="example-list">
+                                <li>CEO</li>
+                                <li>Chief Financial Officer (CFO)</li>
+                                <li>Chief Strategy Officer (CSO)</li>
+                                <li>Chief Marketing Officer (CMO)</li>
+                                <li>Chief Sales Officer</li>
+                                <li>Chief Product Officer</li>
+                                <li>Chief Supply Chain Officer (CSCO)</li>
+                                <li>Chief Procurement Officer (CPO)</li>
+                                <li>Chief HR Officer (CHO)</li>
+                                <li>Chief Information Officer (CIO)</li>
+                                <li>Chief Technology Officer (CTO)</li>
+                                <li>Chief Digital Officer (CDO)</li>
+                                <li>Chief Compliance Officer</li>
+                                <li>General Counsel</li>
+                                <li>Chief GR Officer</li>
+                            </ul>
+                        </div>
+
+                        <div class="example-col">
+                            <div class="example-col__title">Sectors</div>
+                            <div class="example-col__grid no-gap">
+                                <div class="sub-col">
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Technology</h5>
+                                        <ul class="example-list">
+                                            <li>Software (e.g. Analytics/Big Data, <br/>
+                                                Security, ERP)</li>
+                                            <li>Hardware (e.g. PC, server, storage)</li>
+                                            <li>Consumer Electronics</li>
+                                            <li>Mobile Devices</li>
+                                            <li>Semiconductor</li>
+                                            <li>IT Services &amp; Cloud </li>
+                                            <li>IoT</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Media &amp; Entertainment</h5>
+                                        <ul class="example-list">
+                                            <li>Games (online, mobile, console)</li>
+                                            <li>eCommerce</li>
+                                            <li>Digital Media &amp; Social</li>
+                                            <li>Traditional Media</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Telecommunications</h5>
+                                        <ul class="example-list">
+                                            <li>Fixed-Line/Wireless <br/>
+                                                Telecom Operation</li>
+                                            <li>Convergence (e.g. CBI)</li>
+                                            <li>Telecom Equipment <br/>
+                                                Manufacturing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sub-col">
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Industrial</h5>
+                                        <ul class="example-list">
+                                            <li>Automotive (Tier-1 &amp; OEM)</li>
+                                            <li>Aviation, Aerospace &amp; Defense</li>
+                                            <li>Chemicals</li>
+                                            <li>Electrical &amp; Electronic Products</li>
+                                            <li>Industrial Machinery</li>
+                                            <li>Metals/Energy </li>
+                                            <li>Paper &amp; Packaging</li>
+                                            <li>Transportation &amp; Logistics</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Consumer</h5>
+                                        <ul class="example-list">
+                                            <li>Consumer Packaged Goods &amp;
+                                                Durables</li>
+                                            <li>Retail, Apparel &amp; Luxury Goods</li>
+                                            <li>Hospitality &amp; Leisure</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Private Equity</h5>
+                                    </div>
+
+                                    <div class="example-list__wrap">
+                                        <h5 class="example-list__title">Professional Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ** [E] 회사소개 페이지 컨텐츠  -->
+
+        <!-- ** [S] Footer ** -->
+        <footer class="footer">
+            <div class="layout">
+                <nav class="main-nav">
+                    <a href="intro.html" class="m-order-1">
+                        <p>회사소개</p>
+                        <span class="arial">About Us</span>
+                    </a>
+                    <a href="ceo.html" class="m-order-3">
+                        <p>CEO 소개</p>
+                        <span class="arial">Our Leadership</span>
+                    </a>
+                    <a href="service.html" class="m-order-5">
+                        <p>서비스 이용안내</p>
+                        <span class="arial">How it Works</span>
+                    </a>
+                    <a href="terms.html" class="m-order-2">
+                        <p>이용약관</p>
+                        <span class="arial">Terms of Use</span>
+                    </a>
+                    <a href="privacy-policy.html" class="m-order-4">
+                        <p>개인정보 처리방침</p>
+                        <span class="arial">Privacy Policy</span>
+                    </a>
+                    <a href="inquiry.html" class="m-order-6">
+                        <p>문의하기</p>
+                        <span class="arial">Inquiry</span>
+                    </a>
+                </nav>
+
+                <div class="corp-info__wrap m-hidden">
+                    <div class="corp-info">
+                        <p>상호: 티엠지 인터내셔널(유)</p>
+                        <p>대표자: 김승종</p>
+                        <p>07345 서울시 영등포구 63로 40</p>
+                        <p class="arial">email: info@veterancxo.com</p>
+                    </div>
+                    <div class="corp-info">
+                        <p>사업자등록번호: 377-87-00274</p>
+                        <p>통신판매업 신고번호: 377-87-00274</p>
+                        <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                    </div>
+                </div>
+
+                <p class="copyright arial m-hidden">Copyright 2023 TMG International. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- ** [E] Footer ** -->
+
+        <script>
+        </script>
+    </body>
+</html>

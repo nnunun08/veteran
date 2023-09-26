@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="theme-color" content="#ff5200">
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content=""/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content=""/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content=""/> 
+        <meta property="og:image" content=""/>-->
+        <title>TMG</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/global.js"></script>
+    </head>
+    <body>
+        <!-- ** [S] Header ** -->
+        <header class="header">
+            <div class="layout flex h-spread v-start">
+                <div class="header-left">
+                    <h1 class="logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="Veteran CXO" />
+                        </a>
+                    </h1>
+    
+                    <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
+                    <p class="hd-left__txt arial">Korea’s First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
+                </div>
+
+                <div class="header-right m-hidden">
+                    <a href="login.html" class="hd-right__link">
+                        개인회원 로그인
+                        <span class="arial">
+                            Individual Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <a href="login.html" class="hd-right__link">
+                        기업회원 로그인
+                        <span class="arial">
+                            Corporate Member<br/>
+                            Sign In
+                        </span>
+                    </a>
+
+                    <div class="hd-signup__wrap">
+                        <a href="javascript:void(0);" class="hd-signup__link">
+                            회원가입
+                            <span class="arial">Subscribe</span>
+                        </a>
+
+                        <ul class="hd-signup__list">
+                            <li>
+                                <a href="signup-1.html">개인회원 가입</a>
+                            </li>
+                            <li>
+                                <a href="signup-1.html">기업회원 가입</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="m-menu-btn" title="메뉴"></button>
+            </div>
+        </header>
+        <!-- ** [E] Header ** -->
+
+        <!-- ** [S] Mobile Side Menu ** -->
+        <aside class="side-menu__wrap m-only">
+            <div class="side-menu__hd">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="./images/logo.png" alt="Veteran CXO" />
+                    </a>
+                </h1>
+
+                <!-- 사이드 메뉴 닫기 버튼 -->
+                <button type="button" class="m-menu-close" title="닫기"></button>
+
+                <!-- Depth 1으로 이동 버튼 -->
+                <button type="button" class="m-menu-close back" title="뒤로" hidden onclick="goMainMenu();"></button>
+            </div>
+
+            <div class="side-menu__content">
+                <!-- Depth 1 -->
+                <ul class="side-menu__nav depth-1">
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">신규 채용포지션 등록</a>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:void(0);" onclick="goSubMenu()">채용 현황 조회</a>
+                    </li>
+                    <li>
+                        <a href="#">임원검색</a>
+                    </li>
+                    <li>
+                        <a href="#">관심 프로필조회</a>
+                    </li>
+                    <li>
+                        <a href="#">이용권 구매</a>
+                    </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                    </li>
+                    <li>
+                        <a href="#">My Page</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+
+                <!-- Dpeth 2 -->
+                <ul class="side-menu__nav depth-2" hidden>
+                    <li>
+                        <a href="#">신규 JD 등록</a>
+                    </li>
+                    <li>
+                        <a href="#">기존 JD 편집</a>
+                    </li>
+                </ul>
+
+                <!-- Side Menu Footer -->
+                <footer class="footer">
+                    <div class="layout">
+                        <nav class="main-nav">
+                            <a href="intro.html" class="m-order-1">
+                                <p>회사소개</p>
+                                <span class="arial">About Us</span>
+                            </a>
+                            <a href="ceo.html" class="m-order-3">
+                                <p>CEO 소개</p>
+                                <span class="arial">Our Leadership</span>
+                            </a>
+                            <a href="service.html" class="m-order-5">
+                                <p>서비스 이용안내</p>
+                                <span class="arial">How it Works</span>
+                            </a>
+                            <a href="terms.html" class="m-order-2">
+                                <p>이용약관</p>
+                                <span class="arial">Terms of Use</span>
+                            </a>
+                            <a href="privacy-policy.html" class="m-order-4">
+                                <p>개인정보 처리방침</p>
+                                <span class="arial">Privacy Policy</span>
+                            </a>
+                            <a href="inquiry.html" class="m-order-6">
+                                <p>문의하기</p>
+                                <span class="arial">Inquiry</span>
+                            </a>
+                        </nav>
+        
+                        <div class="corp-info__wrap">
+                            <div class="corp-info">
+                                <p>상호: 티엠지 인터내셔널(유)</p>
+                                <p>대표자: 김승종</p>
+                                <p>07345 서울시 영등포구 63로 40</p>
+                                <p class="arial">email: info@veterancxo.com</p>
+                            </div>
+                            <div class="corp-info">
+                                <p>사업자등록번호: 377-87-00274</p>
+                                <p>통신판매업 신고번호: 377-87-00274</p>
+                                <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                            </div>
+                        </div>
+        
+                        <p class="copyright arial">Copyright 2023 TMG International. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </aside>
+        <!-- ** [E] Mobile Side Menu ** -->
+
+        <!-- ** [S] MBIT 테스트 -->
+        <div class="page-content personal-mbti-test-page">
+            <img src="./images/intro-banner.png" class="top-banner" alt=""/>
+            <div class="full-layout flex h-spread">
+                <section class="famous-saying m-hidden">
+                    <p>“Luck is what happens when 
+                        preparation meets opportunity.” </p>
+                    <b><span>-</span> Seneca</b>
+                </section>
+
+                <section class="page-nav__wrap flex">
+                    <button type="button" class="alarm-btn"><i>2</i></button>
+                    <ul class="page-nav__list">
+                        <li class="">
+                            <a href="javascript:void(0);" class="page-nav__link">제안 받은 채용기회</a>
+    
+                            <ul class="page-nav__sub">
+                                <li class="active">
+                                    <a href="#">신규/미확인 채용기회</a>
+                                </li>
+                                <li>
+                                    <a href="#">수락한 채용기회</a>
+                                </li>
+                                <li>
+                                    <a href="#">거절한 채용기회</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="page-nav__link">채용공고</a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="page-nav__link en">My Page</a>
+
+                            <ul class="page-nav__sub">
+                                <li>
+                                    <a href="#">내 프로필 편집</a>
+                                </li>
+                                <li>
+                                    <a href="#">외부기회별 오픈니스</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">무료 MBTI 테스트</a>
+                                </li>
+                                <li>
+                                    <a href="#">내 MBTI 결과 조회</a>
+                                </li>
+                                <li>
+                                    <a href="#">계정 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="layout personal-mbti-test-layout">
+                <div class="mbti-test__top">
+                    <h3><span class="en">Free MBTI mini-Test</span> (약 15분 소요)</h3>
+                    <p>(본인의 <span class="en">MBTI</span> 유형이 무엇인지 간단히 확인할 수 있는 무료 테스트 제공)</p>
+                </div>
+                <div class="mbti-test__content">
+                    <div class="mbti-content__top">
+                        <div class="mbti-top__txt">
+                            <p class="en">INACCURATE</p>
+                            <p class="en">NEUTRAL</p>
+                            <p class="en">ACCURATE</p>
+                        </div>
+                    </div>
+
+                    <ul class="mbti-test__list" id="mbti-1">
+                        <!-- -->
+                    </ul>
+                </div>
+
+                <div class="mbti-test__content">
+                    <div class="mbti-content__top center en">FROM EACH PAIR, CHOOSE THE PHRASE THAT DESCRIBES YOU BEST</div>
+
+                    <ul class="mbti-test__list" id="mbti-2">
+                        <!-- -->
+                    </ul>
+                </div>
+
+                <div class="mbti-bottom flex h-end">
+                    <button type="button" class="mbti-submit__btn">
+                        <img src="./images/ico-submit.png" alt=""/>
+                        <span class="en">SUBMIT</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ** [E] MBIT 테스트  -->
+
+        <!-- ** [S] Footer ** -->
+        <footer class="footer">
+            <div class="layout">
+                <nav class="main-nav">
+                    <a href="intro.html" class="m-order-1">
+                        <p>회사소개</p>
+                        <span class="arial">About Us</span>
+                    </a>
+                    <a href="ceo.html" class="m-order-3">
+                        <p>CEO 소개</p>
+                        <span class="arial">Our Leadership</span>
+                    </a>
+                    <a href="service.html" class="m-order-5">
+                        <p>서비스 이용안내</p>
+                        <span class="arial">How it Works</span>
+                    </a>
+                    <a href="terms.html" class="m-order-2">
+                        <p>이용약관</p>
+                        <span class="arial">Terms of Use</span>
+                    </a>
+                    <a href="privacy-policy.html" class="m-order-4">
+                        <p>개인정보 처리방침</p>
+                        <span class="arial">Privacy Policy</span>
+                    </a>
+                    <a href="inquiry.html" class="m-order-6">
+                        <p>문의하기</p>
+                        <span class="arial">Inquiry</span>
+                    </a>
+                </nav>
+
+                <div class="corp-info__wrap m-hidden">
+                    <div class="corp-info">
+                        <p>상호: 티엠지 인터내셔널(유)</p>
+                        <p>대표자: 김승종</p>
+                        <p>07345 서울시 영등포구 63로 40</p>
+                        <p class="arial">email: info@veterancxo.com</p>
+                    </div>
+                    <div class="corp-info">
+                        <p>사업자등록번호: 377-87-00274</p>
+                        <p>통신판매업 신고번호: 377-87-00274</p>
+                        <p>직업정보제공사업 신고번호: 377-87-00274</p>
+                    </div>
+                </div>
+
+                <p class="copyright arial m-hidden">Copyright 2023 TMG International. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- ** [E] Footer ** -->
+
+        <script>
+            let mbtiList1 = [
+                "I try not to draw attention to myself"
+                , "I feel uncomfortable when I disagree with someone"
+                , "I lose my belongings"
+                , "I have a vivid imagination"
+                , "I would enjoy attending a large party in my honor"
+                , "I dislike being in competition with others"
+                , "I prefer to follow a schedule"
+                , "I question the wisdom of my elders"
+                , "I enjoy being the center of attention"
+                , "I try to avoid conflict"
+                , "I make sure my work is finished on time"
+                , "It is important to me to follow traditions"
+                , "I make an effort to be popular"
+                , "I sympathize with the homeless"
+                , "I have trouble controlling my impulses"
+                , "I think about why people do the things they do"
+                , "Being around lots of people energizes me"
+                , "I am helpful to the people around me"
+                , "I am ambitious "
+                , "I like to do things as they were done in the past"
+                , "I avoid being alone"
+                , "I forgive easily"
+                , "I like trying out new hobbies"
+                , "I like to stay active"
+                , "It is best to be totally objective when making a decision"
+                , "I keep my belongings in their proper place"
+                , "I have a rich fantasy life"
+                , "I have little to say"
+                , "I enjoy being there for people when they are feeling sad"
+                , "I would rather go with the flow than have a set schedule"
+                , "I enjoy philosophical discussions"
+                , "I let other people know what I think"
+                , "I avoid arguing, even when I disagree"
+                , "I am very attentive to deadlines"
+                , "I would like to play a musical instrument"
+                , "I have a lot of fun"
+                , "I resist temptations"
+                , "It is easy for me to talk to strangers"
+                , "I am concerned for the welfare of elderly people"
+                , "I am determined to achieve success in life"
+                , "I believe in the importance of art"
+                , "I like to spend my free time alone"
+                , "I believe people should be punished for their mistakes"
+                , "I enjoy having a daily routine"
+                , "I spend time seeking out new experiences "
+                , "I am on the go (=active, energetic, busy)"
+                , "I wish other people would be more logical"
+                , "I like to tidy up"
+                , "I enjoy imagining the future"
+                , "I find it difficult to express my opinions"
+                , "I like to help others with their personal problems "
+                , "I finish assignments before they are due"
+                , "I like thinking about the mysteries of the universe"
+                , "I have a lot of energy"
+                , "I can't stand when someone doesn't like me"
+                , "I follow my impulses"
+                , "I enjoy trying to understand complicated ideas"
+                , "I feel very happy"
+                , "I spend time trying to understand myself "
+                , "I get a thrill out of meeting new people "
+                , "I need support from other people "
+                , "I am not bothered by disorder "
+                , "I enjoy going to museums "
+                , "I avoid noisy crowds "
+                , "I forgive others’ mistakes, even when they harm me personally "
+                , "I make plans and stick to them "
+                , "I like to do things differently, even if I am not sure it will work "
+                , "I do not like to sit still for long "
+                , "I make important decisions based on my gut feelings "
+                , "I start tasks in advance, so that I have plenty of time to finish "
+                , "I hold back my opinions "
+                , "I am sensitive to the feelings of others "
+                , "I am easily distracted "
+                , "I enjoy learning about scientific theories "
+                , "I love life"
+                , "I work hard to please others "
+                , "I have a zest for life "
+                , "I give to people who are less fortunate than I "
+                , "I like to have a detailed plan before starting a task"
+                , "I wonder why I am the way I am "
+                , "I love to make new friends"
+                , "It’s important to me that other people like me"
+                , "I have trouble sticking to a routine"
+                , "I appreciate the beauty of nature"
+                , "I prefer quiet surroundings"
+                , "I find it difficult to get down to work"
+                , "Emotional people make me uncomfortable"
+                , "People tell me I am too quiet"
+                , "I am concerned about others "
+                , "I like to finish all my chores before I do something fun"
+                , "I enjoy chatting with new acquaintances"
+                , "It is important to me to make decisions without being swayed by emotions"
+                , "I carry out my plans"
+                , "It is important to me to understand the bigger picture"
+                , "It is important to me to be of service to others"
+                , "I enjoy examining myself and my life"
+                , "I find it challenging to make new friends"
+                , "I like poetry"
+                , "I am a private person"
+                , "I question why things are the way they are"
+                , "I let others know that I care about their feelings"
+                , "I think about the needs of others"
+                , "I like to be needed by other people"
+                , "I would prefer to come up with an original solution to a problem"
+                , "I am full of new ideas"
+            ];
+
+            let mbti1Li = '';
+            mbtiList1.forEach((item, idx) => {
+                let radios = '';
+                for(let i=0; i<5; i++) {
+                    radios += `
+                        <div class="radio">
+                            <input type="radio" name="mbti-1-${idx}" id="mbti-1-${idx}-${i}" hidden/>
+                            <label for="mbti-1-${idx}-${i}"></label>
+                        </div>
+                    `;               
+                }
+
+                mbti1Li += `<li>
+                    <span>${item}</span> 
+                    <div class="mbti-radio__wrap">
+                        ${radios}
+                    </div>
+                </li>`;
+            }); 
+
+            let mbtiList2 = [
+                { txt1 : "I like ideas that are easy to understand", txt2 : "I like ideas that are complex" }
+                , { txt1 : "I keep my thoughts to myself", txt2 : "I speak up" }
+                , { txt1 : "I spend my time pursuing my goals", txt2 : "I spend my time enjoying life" }
+                , { txt1 : "I put my needs first", txt2 : "I put others’ needs ahead of my own " }
+                , { txt1 : "I trust traditioal values", txt2 : "I question traditional values" }
+                , { txt1 : "I am often disorganized", txt2 : "I keep myself organized" }
+                , { txt1 : "I enjoy activities that are fam iliar", txt2 : "I enjoy experiencing new things" }
+                , { txt1 : "I like to try to innovate", txt2 : "I like to use trusted methods" }
+                , { txt1 : "I prefer to follow a clear procedure", txt2 : "I prefer to improvise" }
+                , { txt1 : "I am always prepared", txt2 : "I lam often unprepared" }
+                , { txt1 : "I work first, play later", txt2 : "I play first, work later" }
+                , { txt1 : "I seek attention from others", txt2 : "I avoid attention from others" }
+                , { txt1 : "I look for ways to help others", txt2 : "I look for ways to acheve my own goals" }
+                , { txt1 : "I feel the pain of other people", txt2 : "I am not easily affected by sad strories" }
+                , { txt1 : "I make sure everyone is taken care of", txt2 : "I look out for myself" }
+                , { txt1 : "I focus on real life", txt2 : "I use my imagination" }
+                , { txt1 : "I value my social status", txt2 : "I value my privacy" }
+                , { txt1 : "I do things step-by-step", txt2 : "I jump in and figure things out as I go" }
+                , { txt1 : "I am more interested in what is possible", txt2 : "I am more interested in what is real" }
+                , { txt1 : "I start conversations", txt2 : "I let others start conversations" }
+                , { txt1 : "I like to coopoerate", txt2 : "I like to compete" }
+                , { txt1 : "I make decisions wite my head", txt2 : "I make decisions with my heart" }
+                , { txt1 : "I follows a plan", txt2 : "I act pm impulse" }
+                , { txt1 : "I prefer to work in an active, bustling office", txt2 : "I prefer to work in a calm,quiet office" }
+            ];
+
+            let mbti2Li = '';
+            mbtiList2.forEach((item, idx) => {
+                let radios = '';
+                for(let i=0; i<5; i++) {
+                    radios += `
+                        <div class="radio">
+                            <input type="radio" name="mbti-2-${idx}" id="mbti-2-${idx}-${i}" hidden/>
+                            <label for="mbti-2-${idx}-${i}"></label>
+                        </div>
+                    `;               
+                }
+
+                mbti2Li += `<li>
+                    <span>${item.txt1}</span> 
+                    <div class="mbti-radio__wrap">
+                        ${radios}
+                    </div>
+                    <span>${item.txt2}</span>
+                </li>`;
+            }); 
+
+            document.getElementById('mbti-1').insertAdjacentHTML('beforeend', mbti1Li);
+            document.getElementById('mbti-2').insertAdjacentHTML('beforeend', mbti2Li);
+        </script>
+    </body>
+</html>
