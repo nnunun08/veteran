@@ -6,6 +6,35 @@
 :root {
     --main-color: #ff5200;
     --sub-color: #70ad47;
+    --grey-color: #666;
+    --olive-color: rgb(227, 221, 132);
+    --olive-color-opacity: rgba(227, 221, 132, 0.2)
+}
+
+/* colors */
+.text-orange {
+    color: var(--main-color);
+}
+.text-grey {
+    color: var(--grey-color);
+}
+
+/* border-color */
+.border-orange {
+    border-color: var(--main-color);
+}
+
+
+/* bg-color*/
+.bg-orange {
+    background-color: var(--main-color);
+}
+
+/* ui forms */
+.olive-shadow-box {
+    background-color: var(--olive-color-opacity);
+    /* x, y, 번짐, 두께 */
+    box-shadow: 0px 0px 10px 5px var(--olive-color);
 }
 
 @font-face {
@@ -2618,7 +2647,7 @@ input:not(.date-picker):read-only {
     margin-bottom: 2.5rem;
 }
 .alert-txt.grey {
-    color: #666;
+    color: var(--grey-color);
     font-size: 1.125rem;
     font-weight: normal;
     background-image: url('../images/ico-alery_grey.png');
