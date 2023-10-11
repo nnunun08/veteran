@@ -50,10 +50,16 @@
     src: local('.Verdana');
     unicode-range: U+0061-007A, U+0041-005A;
 }
+@font-face {
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Malgun Gothic');
+}
 html, body {
     color: #000;
     font-size: 16px;
-    font-family: 'Verdana', 'Noto Sans KR', Arial, sans-serif;
+    font-family: 'Verdana', 'Malgun Gothic', 'Noto Sans KR', Arial, sans-serif;
     line-height: 1.278;
     letter-spacing: -0.02em;
     letter-spacing: normal;
@@ -88,6 +94,9 @@ body {
 }
 .noto {
     font-family: 'Noto Sans KR', Arial, sans-serif !important;
+}
+.ko {
+    font-family: 'Malgun Gothic', 'Noto Sans KR', Arial, sans-serif !important;
 }
 
 body.y-hidden {
@@ -380,7 +389,6 @@ input:not(.date-picker):read-only {
     margin-top: 2.0625rem;
 }
 .famous-saying *:not(.noto) {
-    font-family: 'BookAntiqua', 'Arial', sans-serif !important;
     font-size: 20px;
     font-weight: 100;
     line-height: 1.2727;
@@ -443,7 +451,6 @@ input:not(.date-picker):read-only {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.618;
-    font-family: 'Noto Sans KR', Arial, sans-serif;
     /*white-space: pre-line;*/
 }
 .main-intro .main-intro__txt > a {
@@ -498,7 +505,6 @@ input:not(.date-picker):read-only {
     margin-left: 0.625rem;
 }
 .main-counter__grid .counter-box > strong > span {
-    font-family: 'BookAntiqua', 'Arial', sans-serif !important;
     font-weight: bold;
     font-size: 5rem;
 }
@@ -891,14 +897,12 @@ input:not(.date-picker):read-only {
 .ceo-about__left > h3 {
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'Verdana', sans-serif;
 }
 .ceo-about__left > h3 > small {
     display: block;
     font-size: 1.625rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
-    font-family: 'Noto Sans KR', Arial, sans-serif;
 }
 .ceo-about .about-list__title {
     width: 9.75rem;
@@ -1154,6 +1158,9 @@ input:not(.date-picker):read-only {
 .modal-wrap.confirm-modal .modal-content {
     padding: 2.5rem 2.5rem 2.875rem;
     width: 37.5rem;
+}
+.modal-wrap.confirm-modal .modal-content.wide {
+    padding: 2.5rem 2.3rem 2.875rem;
 }
 .modal-wrap.confirm-modal .confirm-title {
     font-size: 1.625rem;
@@ -2086,6 +2093,9 @@ input:not(.date-picker):read-only {
     font-size: 1.875rem;
     text-align: center;
 }
+.signup-skill__hd .lined-title.sub-title {
+    font-size: 1.625rem;
+}
 .signup-skill__hd .lined-title > small {
     display: block;
 }
@@ -2434,16 +2444,6 @@ input:not(.date-picker):read-only {
     align-items: center;
     justify-content: center;
     margin-top: 3.125rem;
-}
-.employ-form__bottom button {
-    min-width: 12.5rem;
-    height: 5rem;
-    border-radius: 0.625rem;
-    font-size: 1.875rem;
-    font-weight: bold;
-    color: white;
-    letter-spacing: normal;
-    background-color: #767171;
 }
 .employ-form__bottom button + button {
     margin-left: 2.5rem;
@@ -3489,20 +3489,14 @@ input:not(.date-picker):read-only {
     padding-left: 1.25rem;
 }
 .career-years {
-    min-width: 5rem;
-    height: 2.875rem;
-    background-color: #a9d18e;
-    padding-inline: 0.5rem;
-    font-size: 1.4375rem;
-    font-weight: 500;
-    letter-spacing: normal;
-    text-align: center;
-    font-style: normal;
-    border-radius: 50%;
-    margin-left: 0.625rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    margin-left:.5rem; 
+    padding:.1875rem .9375rem .3125rem; 
+    font-style:normal;
+    font-size:1.25rem;
+    font-weight:400; 
+    background-color:#a9d18e;
+    border-radius:100%;
+    font-weight: bold;
 }
 .back-btn {
     width: 2.5625rem;
@@ -3753,7 +3747,8 @@ body .ql-toolbar.ql-snow {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
+    font-size: 11pt;
     font-weight: 400;
 }
 

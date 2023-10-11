@@ -27,10 +27,10 @@ em{font-style:normal}
 .layerPop .layer-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%); width:25rem; padding:1.25rem; background-color:#fff;border-radius:.3125rem;}
 
 .full-layout .famous-saying{margin-top:1rem;}
-.page-content .famous-saying{/*display:block;*/ width:32.5rem; font-size:1.125rem;line-height:1.4;word-break:keep-all;}
-.page-content .famous-saying *:not(.noto){font-family: 'Noto Sans KR' !important;font-size:inherit;font-weight:inherit;}
-.page-content .famous-saying b{font-family:'Verdana' !important;font-size:1.75rem !important}
-.page-content .famous-saying i{font-family:inherit; font-size:inherit;font-style:normal;text-decoration:underline;}
+.page-content .famous-saying{display:block; width:32.5rem; font-size:1.125rem;line-height:1.4;word-break:keep-all;}
+.page-content .famous-saying *:not(.noto){font-size:inherit;font-weight:inherit;}
+.page-content .famous-saying b{font-size:1.75rem !important}
+.page-content .famous-saying i{font-size:inherit;font-style:normal;text-decoration:underline;}
 
 .page-nav__list > li .page-nav__link{min-width:min-content;width:9.625rem;padding:0; border-width:.125rem; text-align:center}
 .page-nav__list > li .page-nav__link .alarm{position:relative; width:2.5rem;height:2.5rem;margin-left:.3125rem; background:url('../images/ico-alarm2.png') 0 0 no-repeat;background-size:100%;}
@@ -133,7 +133,6 @@ em{font-style:normal}
 .profile-wrap li img{position:absolute;left:0;top:calc(50% - 3.125rem); width:6.25rem;}
 .profile-wrap li >strong{font-size:1.75rem;vertical-align:middle}
 .profile-wrap li >button{margin-left:1.3125rem;padding:.4375rem .625rem;background-color:#bfbfbf; font-size:1.25rem;font-weight:700;color:var(--main-color);vertical-align:middle;}
-.profile-wrap li >p{font-family:'Verdana';}
 
 .search-wrap{position:relative;padding-left:5rem; border-radius:.625rem;background-color:#fff; overflow:hidden;}
 .search-wrap input{width:100%;margin:0;padding:0 .9375rem; font-size:1.25rem; line-height:3.75rem; border:0;}
@@ -205,14 +204,14 @@ em{font-style:normal}
 .join-info img{padding-left:2.8125rem;}
 .join-info h3{margin:3.75rem 0 2.8125rem; font-size:1.875rem;}
 .join-info div >p{margin-top:1.875rem; font-size:1.25rem;}
-.join-info div >a{display:inline-block; margin:1.875rem 0; font-family:'Verdana'; font-size:1.25rem;font-weight:700; color:#002060;}
+.join-info div >a{display:inline-block; margin:1.875rem 0; font-size:1.25rem;font-weight:700; color:#002060;}
 .join-info .btns{display:inline-block; margin:3.125rem 0; padding:1.25rem 2.8125rem 1.3125rem; background-color:var(--main-color);}
 @media all and (max-width: 1200px) {
     .join-info img{padding-left:2.8125rem; width:8.8125rem;}    
 }
 
 .company02 .famous-saying i{font-style: italic;}
-.company02 .famous-saying{position:absolute;top:3.125rem;left:50%;display:inline-block; width:49vw;min-width:40rem; font-family:'Verdana';font-size:1.25rem;letter-spacing:-.5px;}
+.company02 .famous-saying{position:absolute;top:3.125rem;left:50%;display:inline-block; width:49vw;min-width:40rem; font-size:1.25rem;letter-spacing:-.5px;}
 .company02 .layout .table-list ul li .inp-wrap .select{width:42.5%;}
 
 .company03{padding-bottom:25rem;}
@@ -231,8 +230,8 @@ em{font-style:normal}
 .company04 .layerPop .layer-content .btn-wrap{margin:0;}
 .company04 .layerPop .layer-content .btn-wrap .btns{min-width:auto;width:5.375rem;height:2.625rem;}
 
-.company05 .famous-saying{margin:3vw auto 0;width:80%;font-weight:500;}
-.page-content.company05 .famous-saying b{font-family:'Verdana' !important;font-size:1.4583vw !important;}
+.company05 .famous-saying{margin:3vw auto 0;width:80%;font-weight:500;font-size:.7933vw;}
+.page-content.company05 .famous-saying b{font-size:1.104rem !important;}
 .company05 .famous-saying span{color:#d60000}
 .company05{}
 .company05 .layout{width:100%; text-align:center}
@@ -241,7 +240,7 @@ em{font-style:normal}
 .flow-wrap{position:relative; width:85%;margin:0 auto;padding-left:26.5625vw;}
 .flow-wrap .flow-item >div{position:relative;display:flex;justify-content:center;align-items:center; width:100%;height:6.7708vw; border:.2083vw solid var(--main-color);border-radius:1.0416vw;background-color:#fff; font-size:1.0416vw;font-weight:700;}
 .flow-wrap .flow-item >div em{position:absolute;top:-1.302vw;left:-.5208vw;display:flex;justify-content:center;align-items:center; width:2.1875vw;height:2.1875vw; border:.1041vw solid #000;border-radius:.2083vw;background-color:#f6bb00; font-size:1.25vw;font-weight:700;}
-.flow-wrap .flow-item >p{margin:1.302vw 0 0 -.625vw;padding-left:.625vw;text-indent:-.625vw; font-size:.8333vw;font-weight:500;text-align:left;word-wrap:break-word;word-break:keep-all;}
+.flow-wrap .flow-item >p{margin:1.302vw 0 0 -.225vw;padding-left:-.625vw;text-indent:-.625vw; font-size:.7933vw;font-weight:500;text-align:left;word-wrap:break-word;word-break:keep-all;}
 .flow-wrap ul{padding:4.0625vw 0 0 1.8229vw; background:url('../images/bg_flow02.png') 0 0 no-repeat;background-size:58.229vw 15.1042vw;}
 .flow-wrap ul::after{content:'';display:block;clear:both;}
 .flow-wrap ul li{float:left; width:14.0625vw;}
@@ -250,7 +249,7 @@ em{font-style:normal}
 .flow-wrap ul +ul{margin-top:2.0833vw;}
 .flow-wrap .flow01{position:absolute;top:calc(50% - 7.96875vw);left:0; width:22.9167vw;height:15.8854vw; padding:4.21875vw 5.9895vw 4.21875vw 0; background:url('../images/bg_flow01.png') right 0 no-repeat;background-size:5.9895vw 15.9375vw;}
 .flow-wrap .flow01 >div{padding:1.5625vw 0;height:auto; font-size:1.0416vw;}
-.flow-wrap .flow01 .attach{position:absolute;top:calc(50% - .7291vw);right:0; font-family:'Verdana';font-size:1.1458vw;font-weight:700;color:#002060;}
+.flow-wrap .flow01 .attach{position:absolute;top:calc(50% - .7291vw);right:0; font-size:1.1458vw;font-weight:700;color:#002060;}
 .flow-wrap .explain{position:absolute;top:calc(50% - 4.6875vw);right:0; width:12.65625vw;height:7.2395vw;padding:1.4583vw .875rem 1.4583vw 1.875rem; background:url('../images/bg_explain.png') 0 0 no-repeat;background-size:12.65625vw 7.2395vw; font-size:.8854vw;font-weight:500;text-align:left;word-wrap:break-word;word-break:keep-all;}
 @media all and (max-width: 1590px) {
     .flow-wrap .explain{padding:1.375rem 1.25rem 1.125rem 1.5rem;}
@@ -440,7 +439,7 @@ em{font-style:normal}
 .company15 .layout .info-wrap .btn-wrap >a.bookmark-on::after{background-image:url('../images/ico-star_off.png');}
 .company15 .layout div h3{font-size:1.875rem;}
 .company15 .layout div h3 span{font-size:1.4375rem;}
-.company15 .layout div .career{margin-left:.5rem; padding:.1875rem .9375rem .3125rem; font-style:normal;font-size:1.4375rem;font-weight:400; background-color:#a9d18e;border-radius:100%;}
+.company15 .layout div .career{margin-left:.5rem; padding:.1875rem .9375rem .3125rem; font-style:normal;font-size:1.25rem;font-weight:400; background-color:#a9d18e;border-radius:100%;}
 .company15 .layout div .depth-1{margin:2rem 0 0 1rem;}
 .company15 .layout div .depth-2{margin:.625rem 0 0 1rem;}
 .company15 .layout div .depth-3{margin:.625rem 0 0 1rem;}
@@ -543,7 +542,7 @@ em{font-style:normal}
 .addpurchase .flex >div strong span{color:#ddd;}
 .addpurchase .flex >div .select{margin-left:.625rem;}
 .addpurchase .flex >div .select +span{margin-left:.625rem; font-size:1.25rem; text-decoration:underline;}
-.addpurchase .flex >div >p{margin:1.25rem 0 0 8.125rem; padding-left:2.0625rem;text-indent:-2.0625rem; width:28.125rem;}
+.addpurchase .flex >div >p{margin:1.25rem 0 0 8.125rem; padding-left:2.0625rem;text-indent:-2.0625rem; width:30rem;}
 .addpurchase .total{width:42.5rem;margin:5rem auto 0;padding:1.875rem 3.125rem 0; border-top:.9375rem solid #e7e7e7;}
 .addpurchase .total p{font-size:1.5rem;}
 .addpurchase .total .btns{display:inherit; width:13.5rem;margin:3.75rem auto 0}
