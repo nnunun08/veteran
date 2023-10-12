@@ -218,7 +218,7 @@ em{font-style:normal}
 .company03 .table-list ul li .inp-wrapper .inp-wrap{display:inline-flex;}
 .company03 .table-list ul li .checkbox-wrap{display:inline-block; padding:1.25rem 0;}
 
-.company04 .layout{width:35rem;padding:2.5rem;margin:25rem auto;}
+.company04 .layout{width:35rem;padding:2.5rem;margin:2.5rem auto;}
 .company04 .table-list ul li{padding:2.5rem 0 0}
 .company04 .table-list ul li em{display:flex;justify-content:start; width:auto;margin:.6875rem 0 1.0625rem; font-size:1.25rem;font-weight:500;}
 .company04 .table-list ul li .inp-wrapper{max-width:initial;}
@@ -523,7 +523,7 @@ em{font-style:normal}
 
 .purchase{margin-top:3.125rem;}
 .purchase .grid-table .grid-table__row{margin-top:.625rem; grid-template-columns: minmax(0, 16.25fr) minmax(0, 11.875fr) minmax(0, 41.875fr) minmax(0, 15fr) minmax(0, 17.5fr);}
-.purchase .grid-table .grid-table__row > .col > dt{background-color:transparent; font-size:1.5rem;font-weight:500;color:#000;text-decoration:underline;}
+.purchase .grid-table .grid-table__row > .col > dt{background-color:transparent; font-size:1.5rem;font-weight:500;color:#000;text-decoration:underline; text-underline-offset: 0.3rem;}
 .purchase .grid-table .grid-table__row > .col:first-child > dt{padding-left:2rem;}
 .purchase .grid-table .grid-table__row > .col > dt >br{display:none;}
 .purchase .grid-table .grid-table__row > .col > dd{border:.125rem solid #758eba; text-align:center}
@@ -541,7 +541,7 @@ em{font-style:normal}
 .addpurchase .flex >div strong{font-size:1.5rem;font-weight:400;}
 .addpurchase .flex >div strong span{color:#ddd;}
 .addpurchase .flex >div .select{margin-left:.625rem;}
-.addpurchase .flex >div .select +span{margin-left:.625rem; font-size:1.25rem; text-decoration:underline;}
+.addpurchase .flex >div .select +span{margin-left:.625rem; font-size:1.25rem; text-decoration:underline; text-underline-offset: 0.3rem;}
 .addpurchase .flex >div >p{margin:1.25rem 0 0 8.125rem; padding-left:2.0625rem;text-indent:-2.0625rem; width:30rem;}
 .addpurchase .total{width:42.5rem;margin:5rem auto 0;padding:1.875rem 3.125rem 0; border-top:.9375rem solid #e7e7e7;}
 .addpurchase .total p{font-size:1.5rem;}
@@ -599,7 +599,7 @@ em{font-style:normal}
 .com-qna .layout .qna-list table td{border-bottom:.0625rem solid #f3f3f3; font-size:1.25rem;text-align:center}
 .com-qna .layout .qna-list table td a{display:block;padding:1.5625rem 0; text-align:left}
 .com-qna .layout .search-wrap{margin:5.625rem auto 0;width:45rem; border:.125rem solid #000;}
-.com-qna .layout .qna-view >strong{padding-left:3rem; background:url('../images/ico_question.png') 0 .3125rem no-repeat;background-size:2.25rem 2.375rem; font-size:1.875rem;font-weight:700;}
+.com-qna .layout .qna-view >strong{padding-left:3rem; background:url('../images/ico_question.png') no-repeat; background-size:contain; font-size:1.875rem; font-weight:700;}
 .com-qna .layout .qna-view >div{margin-top:.9375rem;padding:1.5625rem 0; border-top:.25rem solid var(--main-color); font-size:1.25rem;line-height:1.5;}
 .com-qna .layout .qna-view .answer{margin-top:2.5rem;padding:2.5rem; border:0;border-radius:.3125rem;background-color:#f6f6f6;}
 .com-qna .layout .qna-view .answer em{padding:.5rem 0 0 2.8125rem; background:url('../images/ico_answer.png') 0 0 no-repeat; font-size:1.25rem;}
@@ -668,7 +668,7 @@ em{font-style:normal}
 .com-mypage .layout{padding-top:9.375rem;width:100%;max-width:120rem;margin:0 auto;}
 .com-mypage .layout .flex .tit{width:22.5rem;margin-top:1.25rem;padding:1.875rem; background-color:#f7f9df;}
 .com-mypage .layout .flex .tit strong{display:flex;justify-content:center;align-items:center; width:100%;padding:1.125rem 0; border:.25rem solid #d1d1d0;background-color:#fff; font-size:1.875rem;font-weight:700;text-align:center}
-.com-mypage .layout .flex .tit p{margin-top:.625rem;padding-left:.875rem;text-indent:-.875rem; font-size:1.25rem;color:#696969;}
+.com-mypage .layout .flex .tit p{margin-top:.625rem;font-size:1.25rem;color:#696969;}
 .com-mypage .layout .flex >table{flex:1 1 0; margin-left:6.25rem;width:100%;}
 .com-mypage .layout .flex >table th{position:relative;padding:1.0625rem 0; font-size:1.375rem;font-weight:500; border-bottom:.25rem solid var(--main-color);}
 .com-mypage .layout .flex >table th::before{content:'';position:absolute;bottom:-.25rem;left:-.125rem; width:.25rem;height:1.625rem; background-color:var(--main-color);}
@@ -677,7 +677,7 @@ em{font-style:normal}
 .com-mypage .layout .flex .withdraw{flex:1 1 0; margin:3.75rem 0 0 6.25rem;width:100%; text-align:center}
 .com-mypage .layout .flex .withdraw strong{font-size:1.75rem;}
 .com-mypage .layout .flex .withdraw ol{margin-top:3.125rem;}
-.com-mypage .layout .flex .withdraw ol li{padding:.625rem 0 .625rem 1.5rem;text-indent:-1.5rem; font-size:1.375rem;text-align:left}
+.com-mypage .layout .flex .withdraw ol li{padding:.625rem 0 1.5rem; font-size:1.375rem;text-align:left}
 .com-mypage .layout .flex .withdraw .checkbox-wrap{display:inline-block;margin-top:4.375rem;}
 .com-mypage .layout .flex .withdraw .btns{width:13.125rem;}
 @media all and (max-width: 1180px) {
@@ -692,7 +692,8 @@ em{font-style:normal}
 .company24 .layout .flex{align-items:start;}
 .company24 .layout .flex .tit{min-height:41.25rem;width:22.5rem;}
 
-.company26 .layout{padding:23.75rem 2.5rem 25rem; width:50rem;}
+/* padding:2.5rem 2.5rem 25rem -> margin-top 10.0rem 을 주었기 때문에 25rem를 15rem 으로 수정함 */
+.company26 .layout{margin-top: 10.0rem; padding:2.5rem 2.5rem 15rem; width:50rem;}
 .company26 .layout .modal-content .modal-hd{margin:0 -2.25rem;padding:2rem 2.25rem 1.625rem; border-bottom-color:#d0d0d0;}
 .company26 .layout .modal-content .modal-body{padding:3.5rem 0 3.125rem;}
 
