@@ -18,6 +18,7 @@
         <title>TMG</title>
         <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/company.css"/>
         <script src="js/global.js"></script>
     </head>
     <body>
@@ -180,7 +181,7 @@
         </aside>
         <!-- ** [E] Mobile Side Menu ** -->
 
-        <div class="page-content">
+        <div class="page-content notification-popup">
             <img src="./images/intro-banner.png" class="top-banner" alt=""/>
 
             <div class="full-layout flex h-spread">
@@ -239,9 +240,45 @@
                     </ul>
                 </section>
             </div>
+
+            <section class="layout">
+                <p class="alert">각각의 알림 메시지를 확인 후 OK 버튼을 누르면 메뉴 상단의 알림 icon의 메시지 수가 차감됨</p>
+                <div class="noti-box">
+                    <div class="modal-hd">
+                        <h3 class="modal-hd__title">Notifications unread</h3>
+
+                    </div>
+
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <p>· 2023년 1월 13일 경영관리 부사장 채용공고에 최OO님 지원함</p>
+                                <button type="button" class="btn-ok">OK</button>
+                            </li>
+                            <li>
+                                <p>· 2023년 1월 13일 CFO 채용에 김OO님 포지션 제안을 수락함</p>
+                                <button type="button" class="btn-ok">OK</button>
+                            </li>
+                            <li>
+                                <p>· 2023년 1월 10일 경영관리 부사장 채용공고에 박OO, 홍OO 지원함</p>
+                                <button type="button" class="btn-ok">OK</button>
+                            </li>
+                            <li>
+                                <p>· 2023년 1월 5일 CFO 채용에 박OO님 포지션 제안을 수락함</p>
+                                <button type="button" class="btn-ok">OK</button>
+                            </li>
+                            <li>
+                                <p>· 2023년 1월 5일 [회사명]의 ‘Veteran CXO 연회비’가 1회 연체되었습니다.<br />[My Page]→{결제]에서 카드정보를 확인 바랍니다.</p>
+                                <button type="button" class="btn-ok">OK</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
         </div>
 
-        <aside class="modal-wrap noti-modal active" id="notification-modal">
+        <aside class="modal-wrap noti-modal" id="notification-modal">
             <div class="modal-temp__wrap">
                 <p class="alert-txt grey" style="color: white;">각각의 알림 메시지를 확인 후 OK 버튼을 누르면 메뉴 상단의 알림 icon의 메시지 수가 차감됨</p>
                 <div class="modal-content">
@@ -297,6 +334,8 @@
                 </div>
             </div>
         </aside>
+
+
 
         <!-- ** [S] Footer ** -->
         <footer class="footer">

@@ -1,0 +1,73 @@
+<!-- ** [S] Header ** -->
+<header class="header">
+  <div class="layout flex h-spread v-start">
+    <div class="header-left">
+      <h1 class="logo">
+        <a href="/">
+          <img src="./images/logo.png" alt="Veteran CXO" />
+        </a>
+      </h1>
+      <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
+      <p class="hd-left__txt arial">Korea's First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
+    </div>
+
+    <div class="header-right m-hidden">
+
+      <!-- s: language dropdown -->
+      <div class="lang-dropdown"
+           x-data="{ open: false, lang: 'ko' }"
+           @mouseover.away="open = false"
+      >
+        <div class="selected" @click="open = true">
+          <!-- lang options selected -->
+          <p class="lang-opt ko" x-show="lang === 'ko'" :class="{ 'em': open }"></p>
+          <p class="lang-opt en" x-show="lang === 'en'" :class="{ 'em': open }"></p>
+          <!-- drop arrow -->
+          <span class="arrow down" x-show="!open"></span>
+          <span class="arrow up" x-show="open"></span>
+        </div>
+        <!-- lang option list -->
+        <div class="opt-list" x-show="open">
+          <p class="lang-opt ko" x-show="lang !== 'ko'" @click="open = false; lang = 'ko'"></p>
+          <p class="lang-opt en" x-show="lang !== 'en'" @click="open = false; lang = 'en'"></p>
+        </div>
+      </div>
+      <!-- e: language dropdown -->
+
+      <a href="login.html" class="hd-right__link">
+        개인회원 로그인
+        <span class="arial">
+                            Individual Member<br/>
+                            Sign In
+                        </span>
+      </a>
+
+      <a href="login.html" class="hd-right__link">
+        기업회원 로그인
+        <span class="arial">
+                            Corporate Member<br/>
+                            Sign In
+                        </span>
+      </a>
+
+      <div class="hd-signup__wrap">
+        <a href="javascript:void(0);" class="hd-signup__link">
+          회원가입
+          <span class="arial">Subscribe</span>
+        </a>
+
+        <ul class="hd-signup__list">
+          <li>
+            <a href="signup-1.html">개인회원 가입</a>
+          </li>
+          <li>
+            <a href="signup-1.html">기업회원 가입</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="m-menu-btn" title="메뉴"></button>
+  </div>
+</header>
+<!-- ** [E] Header ** -->

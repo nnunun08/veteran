@@ -1,5 +1,5 @@
 em{font-style:normal}
-.full-layout{max-width:120rem;margin:0 auto;}
+.full-layout{max-width: unset ;margin:0 auto;}
 
 .blind{width:0;height:0;visibility:hidden;font-size:0;line-height:0;position:absolute;top:0;left:0;overflow:hidden;}
 
@@ -27,18 +27,21 @@ em{font-style:normal}
 .layerPop .layer-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%); width:25rem; padding:1.25rem; background-color:#fff;border-radius:.3125rem;}
 
 .full-layout .famous-saying{margin-top:1rem;}
-.page-content .famous-saying{display:block; width:32.5rem; font-size:1.125rem;line-height:1.4;word-break:keep-all;}
-.page-content .famous-saying *:not(.noto){font-size:inherit;font-weight:inherit;}
-.page-content .famous-saying b{font-size:1.75rem !important}
-.page-content .famous-saying i{font-size:inherit;font-style:normal;text-decoration:underline;}
+.page-content .famous-saying{/*display:block;*/ font-size:.8333vw;line-height:1.4;word-break:keep-all;}
+.page-content .famous-saying *:not(.noto){font-family: 'Noto Sans KR' !important;font-size:inherit;font-weight:inherit;}
+.page-content .famous-saying b{font-family:'Verdana' !important;font-size:15.29pt !important}
+.page-content .famous-saying i{font-family:inherit; font-size:inherit;font-style:normal;text-decoration:underline; display: contents;}
 
 .page-nav__list > li .page-nav__link{min-width:min-content;width:9.625rem;padding:0; border-width:.125rem; text-align:center}
 .page-nav__list > li .page-nav__link .alarm{position:relative; width:2.5rem;height:2.5rem;margin-left:.3125rem; background:url('../images/ico-alarm2.png') 0 0 no-repeat;background-size:100%;}
 .page-nav__list > li .page-nav__link .alarm >span{position:absolute;top:-.1875rem;right:-.1875rem; width:1.125rem; border:.0625rem solid #e5e6ea;border-radius:100%;background-color:var(--main-color); font-size:.8125rem;line-height:1.125rem;color:#fff;}
 .page-nav__list > li .page-nav__sub{z-index:1; width:100%;}
 .page-nav__list > li .page-nav__sub > li{white-space:nowrap}
+.page-nav__list > li .page-nav__link.jd-position {
+    width: 12rem;
+}
 
-.page-content .layout{position:relative; width:87.5rem;margin:0 auto;padding:3.125rem 2.5rem 0;}
+.page-content .layout{position:relative; width:95.5rem;margin:0 auto;padding:3.125rem 2.5rem 0;}
 .layout >h2{font-size:2rem;font-weight:700; line-height:6.25rem;}
 .layout .table-list{margin-top:3.125rem;}
 .layout .table-list:first-child{margin-top:0;}
@@ -204,21 +207,21 @@ em{font-style:normal}
 .join-info img{padding-left:2.8125rem;}
 .join-info h3{margin:3.75rem 0 2.8125rem; font-size:1.875rem;}
 .join-info div >p{margin-top:1.875rem; font-size:1.25rem;}
-.join-info div >a{display:inline-block; margin:1.875rem 0; font-size:1.25rem;font-weight:700; color:#002060;}
-.join-info .btns{display:inline-block; margin:3.125rem 0; padding:1.25rem 2.8125rem 1.3125rem; background-color:var(--main-color);}
+.join-info div >a{display:inline-block; margin:1.875rem 0; font-family:'Verdana'; font-size:1.25rem;font-weight:700; color:#002060;}
+.join-info .btns{display:inline-flex; margin:3.125rem 0; padding:1.25rem 2.8125rem 1.3125rem; background-color:var(--main-color);}
 @media all and (max-width: 1200px) {
     .join-info img{padding-left:2.8125rem; width:8.8125rem;}    
 }
 
 .company02 .famous-saying i{font-style: italic;}
-.company02 .famous-saying{position:absolute;top:3.125rem;left:50%;display:inline-block; width:49vw;min-width:40rem; font-size:1.25rem;letter-spacing:-.5px;}
+.company02 .famous-saying{position:absolute;top:3.125rem;left:50%;display:inline-block; width:49vw;min-width:40rem; font-family:'Verdana';font-size:12.94pt;letter-spacing:-.5px;}
 .company02 .layout .table-list ul li .inp-wrap .select{width:42.5%;}
 
 .company03{padding-bottom:25rem;}
 .company03 .table-list ul li .inp-wrapper .inp-wrap{display:inline-flex;}
 .company03 .table-list ul li .checkbox-wrap{display:inline-block; padding:1.25rem 0;}
 
-.company04 .layout{width:35rem;padding:2.5rem;margin:2.5rem auto;}
+.company04 .layout{width:35rem;padding:2.5rem;margin:5rem auto;}
 .company04 .table-list ul li{padding:2.5rem 0 0}
 .company04 .table-list ul li em{display:flex;justify-content:start; width:auto;margin:.6875rem 0 1.0625rem; font-size:1.25rem;font-weight:500;}
 .company04 .table-list ul li .inp-wrapper{max-width:initial;}
@@ -230,8 +233,8 @@ em{font-style:normal}
 .company04 .layerPop .layer-content .btn-wrap{margin:0;}
 .company04 .layerPop .layer-content .btn-wrap .btns{min-width:auto;width:5.375rem;height:2.625rem;}
 
-.company05 .famous-saying{margin:3vw auto 0;width:80%;font-weight:500;font-size:.7933vw;}
-.page-content.company05 .famous-saying b{font-size:1.104rem !important;}
+.company05 .famous-saying{width:80%;font-weight:500;}
+.page-content.company05 .famous-saying b{font-family:'Verdana' !important;font-size:17pt !important;}
 .company05 .famous-saying span{color:#d60000}
 .company05{}
 .company05 .layout{width:100%; text-align:center}
@@ -296,8 +299,8 @@ em{font-style:normal}
 .company09 .layout{padding-top:8.75rem;}
 .company09 .layout .grid-table .grid-table__row{grid-template-columns: minmax(0, 5fr) minmax(0, 11.25fr) minmax(0, 10fr) minmax(0, 14.375fr) minmax(0, 13.75fr) minmax(0, 7.5fr) minmax(0, 13.125fr);}
 
-.company10 .famous-saying{width:29.375rem;}
-.company12 .famous-saying{width:31.25rem;font-size:1.25rem;}
+.company10 .famous-saying{}
+.company12 .famous-saying{font-size:.8333vw;}
 .company10 .layout .table-list ul li .tit,
 .company12 .layout .table-list ul li .tit{width:11.25rem;margin-right:1.25rem;}
 .company10 .layout .table-list ul li .inp-wrapper,
@@ -316,7 +319,7 @@ em{font-style:normal}
 .company11 .layout .grid-table .grid-table__row .brd-line{position:relative}
 .company11 .layout .grid-table .grid-table__row .brd-line::before{content:'';position:absolute;top:0;bottom:0;left:-.6875rem; width:.125rem; background-color:#dedede;}
 
-.company12 .layout{width:93.75rem;}
+.company12 .layout{width:105.75rem;}
 .company12 .layout .table-list,
 .company13 .layout .table-list{position:relative;}
 .company12 .layout .table-list ul li .inp-wrap.com12 .input,
@@ -703,7 +706,7 @@ em{font-style:normal}
 .modal-find .modal-content .tooltip-wrap .tooltip-content{border-color:#777;color:#666;}
 .modal-find .modal-content .tooltip-btn{background-image:url('../images/ico-tooltip03.png');}
 
-.company27 .layout{padding:12.5rem 2.5rem 3.125rem; width:57.5rem;}
+.company27 .layout{padding:6.5rem 2.5rem 3.125rem; }
 .company27 .layout .alert{margin-bottom:.625rem;}
 .company27 .layout .modal-content{width:100%;max-width:100%;height:32.5rem; overflow-y:scroll}
 .company27 .layout .modal-body{padding:0 0 0 1rem;}
@@ -711,3 +714,12 @@ em{font-style:normal}
 .company27 .layout li +li{border-top:.0625rem solid #eee;}
 .company27 .layout li p{padding-left:.9375rem;text-indent:-.9375rem; font-size:1.25rem;line-height:1.5;word-wrap:break-word;word-break:keep-all;}
 .company27 .layout li .btn-ok{position:absolute;top:calc(50% - 1.4375rem);right:0; width:4.0625rem;height:2.8125rem; border-radius:100%;border:.0625rem solid #000;background-color:#f6bb00;}
+
+
+.page-content.notification-popup .layout {padding: 6.5rem 2.5rem 3.125rem;}
+.page-content.notification-popup .layout .noti-box{width:100%;max-width:100%;height:32.5rem; overflow-y:scroll}
+.page-content.notification-popup .layout .modal-body{padding:0 0 0 1rem;}
+.page-content.notification-popup .layout li{position:relative; padding:1.5rem 5.3125rem 1.5rem 0;}
+.page-content.notification-popup .layout li +li{border-top:.0625rem solid #eee;}
+.page-content.notification-popup .layout li p{padding-left:.9375rem;text-indent:-.9375rem; font-size:1.25rem;line-height:1.5;word-wrap:break-word;word-break:keep-all;}
+.page-content.notification-popup .layout li .btn-ok{position:absolute;top:calc(50% - 1.4375rem);right:0; width:4.0625rem;height:2.8125rem; border-radius:100%;border:.0625rem solid #000;background-color:#f6bb00;}

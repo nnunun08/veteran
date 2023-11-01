@@ -19,6 +19,13 @@
         <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/global.js"></script>
+        <script src="js/alpine.3.13.2.js"></script>
+        <script>
+            Alpine.store('snsModal', {
+                open: false,
+            });
+
+        </script>
     </head>
     <body>
         <!-- ** [S] Header ** -->
@@ -203,8 +210,10 @@
 
                             <p class="or">or</p>
 
-                            <div class="radio-wrap check">
-                                <input type="radio" name="signup-radio" id="signup-radio-2" hidden />
+                            <div class="radio-wrap check" x-data>
+                                <input type="radio" name="signup-radio" id="signup-radio-2" hidden
+                                       @change="$store.snsModal.open = true"
+                                />
                                 <label for="signup-radio-2">Social media/이메일 계정을 통한 회원 가입</label>
                             </div>
 
@@ -267,7 +276,7 @@
                 </div>
 
                 <!-- 이미 가입된 계정이 있습니다 : 레이어 -->
-                <div class="modal-layer" id="has-acct-layer">
+                <div class="modal-layer" id="has-acct-layer" >
                     <div class="modal-layer__content">
                         <div class="modal-layer__hd">
                             <div class="layer-warning">
@@ -289,18 +298,61 @@
                             </a>
 
                             <!-- Veteran CXO 계정일 경우 -->
-                            <a href="#" class="layer-acct__btn veteran-cxo-acct">
-                                <img class="logo-mark" src="./images/logo.png" alt="Veteran CXO Logo"/>
-                                <div class="layer-acct__info">
-                                    <h3>se********</h3>
-                                    <p>2016-01-07 가입</p>
-                                </div>
-                            </a>
+<!--                            <a href="#" class="layer-acct__btn veteran-cxo-acct">-->
+<!--                                <img class="logo-mark" src="./images/logo.png" alt="Veteran CXO Logo"/>-->
+<!--                                <div class="layer-acct__info">-->
+<!--                                    <h3>se********</h3>-->
+<!--                                    <p>2016-01-07 가입</p>-->
+<!--                                </div>-->
+<!--                            </a>-->
                         </div>
                     </div>
                 </div>                
             </div>
         </aside>
+
+        <!-- SNS 인증 모달 -->
+        <aside class="modal-wrap active" id="sns-modal"
+               x-show="$store.snsModal.open"
+        >
+            <div class="modal-content " style="width:auto">
+                <div class="modal-body">
+                    <div class="modal" id="sns-modal2">
+                        <div class="modal-layer__content">
+                            <div class="modal-layer__hd">
+                                <div class="layer-warning">
+                                    <span class="noto">이미 연동된 계정입니다.</span>
+                                </div>
+                                <button type="button" class="layer-close"
+                                        @click="$store.snsModal.open = false"></button>
+                            </div>
+                            <div class="modal-layer__body">
+                                <p class="layer-txt">로그인을 원하시면 계정을 선택하십시오.</p>
+
+                                <!-- SNS 계정일 경우 -->
+                                <a href="#" class="layer-acct__btn sns-acct">
+                                    <img class="sns-mark" src="./images/ico-google.png" alt="Google"/>
+                                    <div class="layer-acct__info">
+                                        <h3>se********@na***.com</h3>
+                                        <p>2016-01-07 가입</p>
+                                    </div>
+                                </a>
+
+                                <!-- Veteran CXO 계정일 경우 -->
+                                <!--                            <a href="#" class="layer-acct__btn veteran-cxo-acct">-->
+                                <!--                                <img class="logo-mark" src="./images/logo.png" alt="Veteran CXO Logo"/>-->
+                                <!--                                <div class="layer-acct__info">-->
+                                <!--                                    <h3>se********</h3>-->
+                                <!--                                    <p>2016-01-07 가입</p>-->
+                                <!--                                </div>-->
+                                <!--                            </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
 
         <!-- ** [S] Footer ** -->
         <footer class="footer">
@@ -352,6 +404,8 @@
         <!-- ** [E] Footer ** -->
 
         <script>
+
+
             /* 숫자만 입력 가능하게 */
             function checkIsNumber(event) {
                 const inputValue = event.target.value;

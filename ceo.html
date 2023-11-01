@@ -19,60 +19,14 @@
         <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/global.js"></script>
+        <script src="js/alpine.3.13.2.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
-        <!-- ** [S] Header ** -->
-        <header class="header">
-            <div class="layout flex h-spread v-start">
-                <div class="header-left">
-                    <h1 class="logo">
-                        <a href="/">
-                            <img src="./images/logo.png" alt="Veteran CXO" />
-                        </a>
-                    </h1>
-    
-                    <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
-                    <p class="hd-left__txt">Korea's First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
-                </div>
-
-                <div class="header-right m-hidden">
-                    <a href="login.html" class="hd-right__link">
-                        개인회원 로그인
-                        <span>
-                            Individual Member<br/>
-                            Sign In
-                        </span>
-                    </a>
-
-                    <a href="login.html" class="hd-right__link">
-                        기업회원 로그인
-                        <span>
-                            Corporate Member<br/>
-                            Sign In
-                        </span>
-                    </a>
-
-                    <div class="hd-signup__wrap">
-                        <a href="javascript:void(0);" class="hd-signup__link">
-                            회원가입
-                            <span>Subscribe</span>
-                        </a>
-
-                        <ul class="hd-signup__list">
-                            <li>
-                                <a href="signup-1.html">개인회원 가입</a>
-                            </li>
-                            <li>
-                                <a href="signup-1.html">기업회원 가입</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <button type="button" class="m-menu-btn" title="메뉴"></button>
-            </div>
-        </header>
-        <!-- ** [E] Header ** -->
+        <!-- common header -->
+        <div x-data="headerLoader()" x-init="loadContent()">
+            <div x-html="content"></div>
+        </div>
 
         <!-- ** [S] Mobile Side Menu ** -->
         <aside class="side-menu__wrap m-only">
@@ -196,11 +150,11 @@
 
                             <p>두번째는 스스로 최고경영자가 되어 주요 의사결정을 직접 내리는 전문 경영인의 커리어였습니다.</p>
 
-                            <p>세번째는 사람(HR)과 관련된 사업으로의 커리어 전환이었습니다. 이유는 간단했습니다.<br/>
-                            머리로 CEO에게 조언을 해주고 현장에서 경영을 해보면서 체득한 기업경영의 핵심은 바로 ‘핵심역량의 확보’였습니다.<br/>
-                            그리고 이 핵심역량은 주로 시스템, 프로세스 그리고 인적자원으로 구성이 되는데 이 가운데 가장 중요한 요소는 바로<br/>
-                            인재였기 때문입니다.<br/>
-                            이 중 저는 조직에 가장 큰 임팩트를 가져오는 ‘임원급 인재’에 주목을 했습니다. 이러한 임원급 인재의 존재는 해당<br/>
+                            <p>세번째는 사람(<span class="en">HR</span>)과 관련된 사업으로의 커리어 전환이었습니다.   이유는 간단했습니다. <br/>
+                            머리로 <span class="en">CEO</span>에게 조언을 해주고 현장에서 경영을 해보면서 체득한 기업경영의 핵심은 바로 ‘핵심역량의 확보’였습니다. <br/>
+                            그리고 이 핵심역량은 주로 시스템, 프로세스 그리고 인적자원으로 구성이 되는데 이 가운데 가장 중요한 요소는 바로 <br/>
+                            인재였기 때문입니다.  <br/>
+                            이 중 저는 조직에 가장 큰 임팩트를 가져오는 ‘임원급 인재’에 주목을 했습니다. 이러한 임원급 인재의 존재는 해당 <br/>
                             부서 뿐 아니라 조직 전체에 많은 영향을 미치므로 ‘빌려오는 개념’이 아닌 채용을 통해 ‘내재화’를 시켜야 한다고 생각합니다.</p>
 
                             <p>왜 Veteran CXO일까?</p>
@@ -312,6 +266,7 @@
         <!-- ** [E] Footer ** -->
 
         <script>
+
         </script>
     </body>
 </html>

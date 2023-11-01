@@ -18,60 +18,14 @@
         <title>TMG</title>
         <link rel="stylesheet" href="css/reset.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/alpine.3.13.2.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
-        <!-- ** [S] Header ** -->
-        <header class="header">
-            <div class="layout flex h-spread v-start">
-                <div class="header-left">
-                    <h1 class="logo">
-                        <a href="/">
-                            <img src="./images/logo.png" alt="Veteran CXO" />
-                        </a>
-                    </h1>
-    
-                    <p class="hd-left__txt">국내 최초 글로벌 1000대 기업의 한국계 임원 전용 검색 플랫폼</p>
-                    <p class="hd-left__txt">Korea’s First Search Platform Exclusively for <i>Fortune</i> 1000 Korean CXOs</p>
-                </div>
-
-                <div class="header-right m-hidden">
-                    <a href="login.html" class="hd-right__link">
-                        개인회원 로그인
-                        <span>
-                            Individual Member<br/>
-                            Sign In
-                        </span>
-                    </a>
-
-                    <a href="login.html" class="hd-right__link">
-                        기업회원 로그인
-                        <span>
-                            Corporate Member<br/>
-                            Sign In
-                        </span>
-                    </a>
-
-                    <div class="hd-signup__wrap">
-                        <a href="javascript:void(0);" class="hd-signup__link">
-                            회원가입
-                            <span>Subscribe</span>
-                        </a>
-
-                        <ul class="hd-signup__list">
-                            <li>
-                                <a href="signup-1.html">개인회원 가입</a>
-                            </li>
-                            <li>
-                                <a href="signup-1.html">기업회원 가입</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <button type="button" class="m-menu-btn" title="메뉴"></button>
-            </div>
-        </header>
-        <!-- ** [E] Header ** -->
+        <!-- common header -->
+        <div x-data="headerLoader()" x-init="loadContent()">
+            <div x-html="content"></div>
+        </div>
 
         <!-- ** [S] Mobile Side Menu ** -->
         <aside class="side-menu__wrap m-only">
@@ -182,8 +136,7 @@
         <!-- ** [S] 메인 페이지 컨텐츠 ** -->
         <main class="main-page">
             <section class="famous-saying layout m-hidden">
-                <p>“What is the recipe for successful achievement? To my mind there are just four essential ingredients:  Choose a
-                    career you love, give it the best there is in you, seize your opportunities, and be a member of the team.”</p>
+                <p>“What is the recipe for successful achievement? To my mind there are just four essential ingredients:  Choose<br/> a career you love, give it the best there is in you, seize your opportunities, and be a member of the team.”</p>
                 <b><span>-</span>Benjamin Franklin</b>
             </section>
 
