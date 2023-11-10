@@ -13,26 +13,6 @@
 
     <div class="header-right m-hidden">
 
-      <!-- s: language dropdown -->
-      <div class="lang-dropdown"
-           x-data="{ open: false, lang: 'ko' }"
-           @mouseover.away="open = false"
-      >
-        <div class="selected" @click="open = true">
-          <!-- lang options selected -->
-          <p class="lang-opt ko" x-show="lang === 'ko'" :class="{ 'em': open }"></p>
-          <p class="lang-opt en" x-show="lang === 'en'" :class="{ 'em': open }"></p>
-          <!-- drop arrow -->
-          <span class="arrow down" x-show="!open"></span>
-          <span class="arrow up" x-show="open"></span>
-        </div>
-        <!-- lang option list -->
-        <div class="opt-list" x-show="open">
-          <p class="lang-opt ko" x-show="lang !== 'ko'" @click="open = false; lang = 'ko'"></p>
-          <p class="lang-opt en" x-show="lang !== 'en'" @click="open = false; lang = 'en'"></p>
-        </div>
-      </div>
-      <!-- e: language dropdown -->
 
       <a href="login.html" class="hd-right__link">
         <b>개인회원 로그인</b>

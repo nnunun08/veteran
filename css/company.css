@@ -28,11 +28,10 @@ em{font-style:normal}
 
 .full-layout .famous-saying{margin-top:1rem;}
 .page-content .famous-saying{/*display:block;*/ font-size:.8333vw;line-height:1.4;word-break:keep-all;}
-.page-content .famous-saying *:not(.noto){font-family: 'Noto Sans KR' !important;font-size:inherit;font-weight:inherit;}
-.page-content .famous-saying b{font-family:'Verdana' !important;font-size:15.29pt !important}
+.page-content .famous-saying {font-size:15.29pt !important}
 .page-content .famous-saying i{font-family:inherit; font-size:inherit;font-style:normal;text-decoration:underline; display: contents;}
 
-.page-nav__list > li .page-nav__link{min-width:min-content;width:9.625rem;padding:0; border-width:.125rem; text-align:center}
+.page-nav__list > li .page-nav__link{min-width:min-content;width:12.625rem;padding:0; border-width:.125rem; text-align:center}
 .page-nav__list > li .page-nav__link .alarm{position:relative; width:2.5rem;height:2.5rem;margin-left:.3125rem; background:url('../images/ico-alarm2.png') 0 0 no-repeat;background-size:100%;}
 .page-nav__list > li .page-nav__link .alarm >span{position:absolute;top:-.1875rem;right:-.1875rem; width:1.125rem; border:.0625rem solid #e5e6ea;border-radius:100%;background-color:var(--main-color); font-size:.8125rem;line-height:1.125rem;color:#fff;}
 .page-nav__list > li .page-nav__sub{z-index:1; width:100%;}
@@ -214,7 +213,10 @@ em{font-style:normal}
 }
 
 .company02 .famous-saying i{font-style: italic;}
-.company02 .famous-saying{position:absolute;top:3.125rem;left:50%;display:inline-block; width:49vw;min-width:40rem; font-family:'Verdana';font-size:12.94pt;letter-spacing:-.5px;}
+.company02 .famous-saying{position:absolute;
+    top: 370px;
+    right: 0;
+;display:inline-block; width:49vw;min-width:40rem; font-family:'Verdana';font-size:12.94pt;letter-spacing:-.5px;}
 .company02 .layout .table-list ul li .inp-wrap .select{width:42.5%;}
 
 .company03{padding-bottom:25rem;}
@@ -242,7 +244,7 @@ em{font-style:normal}
 .company05 .layout >strong span{display:block;margin-top:.3645vw; font-size:1.0416vw;font-weight:400;}
 .flow-wrap{position:relative; width:85%;margin:0 auto;padding-left:26.5625vw;}
 .flow-wrap .flow-item >div{position:relative;display:flex;justify-content:center;align-items:center; width:100%;height:6.7708vw; border:.2083vw solid var(--main-color);border-radius:1.0416vw;background-color:#fff; font-size:1.0416vw;font-weight:700;}
-.flow-wrap .flow-item >div em{position:absolute;top:-1.302vw;left:-.5208vw;display:flex;justify-content:center;align-items:center; width:2.1875vw;height:2.1875vw; border:.1041vw solid #000;border-radius:.2083vw;background-color:#f6bb00; font-size:1.25vw;font-weight:700;}
+.flow-wrap .flow-item >div em{position:absolute;top:-1.302vw;left:-.5208vw;display:flex;justify-content:center;align-items:center; width:2.1875vw;height:2.1875vw; border:.1041vw solid #000;border-radius:.2083vw;background-color:#f6bb00; font-size:1.05vw;font-weight:700;}
 .flow-wrap .flow-item >p{margin:1.302vw 0 0 -.225vw;padding-left:-.625vw;text-indent:-.625vw; font-size:.7933vw;font-weight:500;text-align:left;word-wrap:break-word;word-break:keep-all;}
 .flow-wrap ul{padding:4.0625vw 0 0 1.8229vw; background:url('../images/bg_flow02.png') 0 0 no-repeat;background-size:58.229vw 15.1042vw;}
 .flow-wrap ul::after{content:'';display:block;clear:both;}
@@ -266,7 +268,7 @@ em{font-style:normal}
     .flow-wrap{padding:35vw 0 13.3334vw;margin-top:9.3334vw;}
     .flow-wrap::after{content:'';display:block;clear:both;}
     .flow-wrap .flow-item >div{height:17.3334vw; border:.5334vw solid var(--main-color);border-radius:2.6667vw; font-size:2vw;}
-    .flow-wrap .flow-item >div em{top:-2.3334vw;left:-1.3334vw; width:5vw;height:5vw; border:.2667vw solid #000;border-radius:.6667vw; font-size:3.2vw;}
+    .flow-wrap .flow-item >div em{top:-2.3334vw;left:-1.3334vw; width:5vw;height:5vw; border:.2667vw solid #000;border-radius:.6667vw; font-size:1vw;}
     .flow-wrap .flow-item >p{margin-top:4vw;padding-left:1.6vw;text-indent:-1.6vw; font-size:1.5vw;}
     .flow-wrap ul{float:left;width:50%; padding:0 0 20vw; background:url('../images/m_bg_flow02.png') center 0 no-repeat;background-size:25vw 100%;}
     .flow-wrap ul li{float:none; width:30vw !important;margin:0 auto !important;}
@@ -669,6 +671,7 @@ em{font-style:normal}
 .email .modal-content .layerPop .layer-content .btn-wrap .btns{width:5.375rem;min-width:auto; height:2.625rem; padding:0;font-size:1.25rem;}
 
 .com-mypage .layout{padding-top:9.375rem;width:100%;max-width:120rem;margin:0 auto;}
+.com-mypage.company25 .layout{padding:9.375rem 70px 0;width:100%;max-width:unset;margin:0 auto;}
 .com-mypage .layout .flex .tit{width:22.5rem;margin-top:1.25rem;padding:1.875rem; background-color:#f7f9df;}
 .com-mypage .layout .flex .tit strong{display:flex;justify-content:center;align-items:center; width:100%;padding:1.125rem 0; border:.25rem solid #d1d1d0;background-color:#fff; font-size:1.875rem;font-weight:700;text-align:center}
 .com-mypage .layout .flex .tit p{margin-top:.625rem;font-size:1.25rem;color:#696969;}
@@ -677,7 +680,7 @@ em{font-style:normal}
 .com-mypage .layout .flex >table th::before{content:'';position:absolute;bottom:-.25rem;left:-.125rem; width:.25rem;height:1.625rem; background-color:var(--main-color);}
 .com-mypage .layout .flex >table th:first-child::before{display:none;}
 .com-mypage .layout .flex >table td{padding:1.6875rem 0; border-bottom:.0625rem solid #f3f3f3; font-size:1.25rem;text-align:center;}
-.com-mypage .layout .flex .withdraw{flex:1 1 0; margin:3.75rem 0 0 6.25rem;width:100%; text-align:center}
+.com-mypage .layout .flex .withdraw{flex:1 1 0; padding:3.75rem 6.25rem 0;width:100%; text-align:center}
 .com-mypage .layout .flex .withdraw strong{font-size:1.75rem;}
 .com-mypage .layout .flex .withdraw ol{margin-top:3.125rem;}
 .com-mypage .layout .flex .withdraw ol li{padding:.625rem 0 1.5rem; font-size:1.375rem;text-align:left}
@@ -717,7 +720,7 @@ em{font-style:normal}
 
 
 .page-content.notification-popup .layout {padding: 6.5rem 2.5rem 3.125rem;}
-.page-content.notification-popup .layout .noti-box{width:100%;max-width:100%;height:32.5rem; overflow-y:scroll}
+.page-content.notification-popup .layout .noti-box{width:100%;max-width:100%;height:32.5rem; overflow-y:auto}
 .page-content.notification-popup .layout .modal-body{padding:0 0 0 1rem;}
 .page-content.notification-popup .layout li{position:relative; padding:1.5rem 5.3125rem 1.5rem 0;}
 .page-content.notification-popup .layout li +li{border-top:.0625rem solid #eee;}
